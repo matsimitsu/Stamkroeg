@@ -4,8 +4,6 @@ require 'lib/checkin'
 
 class Application < Sinatra::Base
   set :root, File.dirname(__FILE__)
-  set :views, settings.root + '/templates'
-  set :public_folder, settings.root + '/public'
 
   configure do
      Mongoid.configure do |config|
